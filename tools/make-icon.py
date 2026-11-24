@@ -42,21 +42,23 @@ STEAK_ENTRY = "assets/minecraft/textures/item/cooked_beef.png"
 
 
 def find_game_jars():
-    """Best-effort search for Minecraft jars that contain vanilla assets."""
+    """Best-effort search for Minecraft jars that contain vanilla assets.
+
+    Honours the MC_DIR environment variable, then falls back to the usual
+    launcher locations.
+    """
     candidates = []
+    roots = []
 
     env_root = os.environ.get("MC_DIR")
-    roots = []
-    if env_root:
+    if env_root and os.path.isdir(env_root):
         roots.append(env_root)
 
-    # common launcher layouts
     for base in (
         os.path.expanduser("~/.minecraft"),
-        r"D:\minecraft to go\.minecraft",
-        r"C:\minecraft to go\.minecraft",
+        os.path.join(os.environ.get("APPDATA", ""), ".minecraft"),
     ):
-        if os.path.isdir(base):
+        if base and os.path.isdir(base):
             roots.append(base)
 
     for root in roots:

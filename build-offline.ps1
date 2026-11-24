@@ -1,6 +1,18 @@
-# Offline build for the Eating Speed NeoForge mod.
-# Compiles against the NeoForge / Minecraft jars that are already installed in the
+# Offline build for Eat Speed Tuner (NeoForge 1.21.1).
+#
+# Compiles against the NeoForge / Minecraft jars that are already present in a
 # launcher's .minecraft folder, so no network access to maven.neoforged.net is needed.
+#
+# Point it at your own installation either by setting MC_DIR or by passing -McDir:
+#
+#   pwsh -File build-offline.ps1 -McDir "C:\Users\you\.minecraft"
+#   $env:MC_DIR = "D:\somewhere\.minecraft"; pwsh -File build-offline.ps1
+
+param(
+    [string]$McDir,
+    [string]$VersionName = '1.21.1-NeoForge_21.1.250',
+    [string]$JdkHome
+)
 
 $ErrorActionPreference = 'Stop'
 
@@ -13,15 +25,49 @@ $libsDir     = Join-Path $buildDir 'libs'
 $modVersion  = '1.0.0'
 $jarName     = "eatspeedtuner-$modVersion.jar"
 
-$jdkHome = 'C:\Program Files\Java\jdk-21'
-$javac   = Join-Path $jdkHome 'bin\javac.exe'
-$jarTool = Join-Path $jdkHome 'bin\jar.exe'
+# --- locate a JDK 21 -----------------------------------------------------------
+if (-not $JdkHome) { $JdkHome = $env:JAVA_HOME }
+if (-not $JdkHome -or -not (Test-Path (Join-Path $JdkHome 'bin\javac.exe'))) {
+    $candidates = @(
+        'C:\Program Files\Java\jdk-21',
+        'C:\Program Files\Eclipse Adoptium\jdk-21*',
+        'C:\Program Files\Microsoft\jdk-21*'
+    )
+    foreach ($c in $candidates) {
+        $hit = Get-Item $c -ErrorAction SilentlyContinue | Select-Object -First 1
+        if ($hit -and (Test-Path (Join-Path $hit.FullName 'bin\javac.exe'))) {
+            $JdkHome = $hit.FullName
+            break
+        }
+    }
+}
+if (-not $JdkHome) { throw "No JDK 21 found. Set JAVA_HOME or pass -JdkHome." }
 
-$mcRoot   = 'D:\minecraft to go\.minecraft'
-$versionDir = Join-Path $mcRoot 'versions\1.21.1-NeoForge_21.1.250'
+$javac   = Join-Path $JdkHome 'bin\javac.exe'
+$jarTool = Join-Path $JdkHome 'bin\jar.exe'
+
+# --- locate the Minecraft installation -----------------------------------------
+if (-not $McDir) { $McDir = $env:MC_DIR }
+if (-not $McDir) {
+    $guesses = @(
+        (Join-Path $env:APPDATA '.minecraft'),
+        (Join-Path $env:USERPROFILE '.minecraft')
+    )
+    foreach ($g in $guesses) {
+        if (Test-Path $g) { $McDir = $g; break }
+    }
+}
+if (-not $McDir) {
+    throw "Minecraft folder not found. Set MC_DIR or pass -McDir <path to .minecraft>."
+}
+
+$mcRoot     = $McDir
+$versionDir = Join-Path $mcRoot "versions\$VersionName"
 
 if (-not (Test-Path $javac)) { throw "javac not found at $javac" }
-if (-not (Test-Path $versionDir)) { throw "version dir not found: $versionDir" }
+if (-not (Test-Path $versionDir)) {
+    throw "Version folder not found: $versionDir`nPass -VersionName with the exact installed NeoForge version."
+}
 
 # ---------------------------------------------------------------------------
 # 1. Build the classpath from the launcher's version JSON (client + libraries)
