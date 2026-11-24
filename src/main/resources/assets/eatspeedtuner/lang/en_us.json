@@ -1,0 +1,21 @@
+{
+  "eatspeedtuner.screen.title": "Eat Speed Tuner",
+  "eatspeedtuner.screen.input": "Multiplier",
+  "eatspeedtuner.screen.apply": "Apply",
+  "eatspeedtuner.screen.reset": "Reset to vanilla (1.0)",
+  "eatspeedtuner.screen.refresh": "Refresh",
+  "eatspeedtuner.screen.hint": "1 = vanilla speed | 0.5 = half the time | 2 = twice the time",
+  "eatspeedtuner.screen.invalid": "Enter a positive number, e.g. 1, 0.5 or 2",
+  "eatspeedtuner.screen.preview": "Multiplier %s -> steak %s s, dried kelp %s s",
+  "eatspeedtuner.screen.current": "Current: %s (%s)",
+  "eatspeedtuner.screen.source_local": "this game",
+  "eatspeedtuner.screen.source_remote": "from server",
+  "eatspeedtuner.screen.sent": "Request sent to the server...",
+  "eatspeedtuner.screen.applied": "Applied: %s (takes effect immediately)",
+  "eatspeedtuner.screen.refreshed": "Reloaded the current value",
+  "eatspeedtuner.message.not_allowed": "Only the host or an operator can change the eating speed.",
+  "eatspeedtuner.command.query": "Current eating speed multiplier: %s",
+  "eatspeedtuner.command.set": "Eating speed multiplier set to %s",
+  "key.eatspeedtuner.open_config": "Open Eat Speed Tuner",
+  "key.categories.eatspeedtuner": "Eat Speed Tuner"
+}

@@ -1,0 +1,28 @@
+# Build output
+build/
+out/
+*.class
+
+# Extracted game assets — the vanilla steak texture is Mojang's copyrighted
+# artwork and must not be redistributed. tools/make-icon.py extracts it locally
+# from the user's own .minecraft installation at build time.
+tools/vanilla-cooked-beef.png
+
+# IDE
+.idea/
+*.iml
+.vscode/
+*.code-workspace
+
+# OS
+Thumbs.db
+desktop.ini
+.DS_Store
+
+# Local test artefacts
+launch-test.ps1
+launch-stdout.log
+launch-stderr.log
+logs/
+verify/out/
+verify/*.txt

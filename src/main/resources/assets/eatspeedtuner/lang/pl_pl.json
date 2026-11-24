@@ -1,0 +1,21 @@
+{
+  "eatspeedtuner.screen.title": "Szybkość jedzenia",
+  "eatspeedtuner.screen.input": "Mnożnik",
+  "eatspeedtuner.screen.apply": "Zastosuj",
+  "eatspeedtuner.screen.reset": "Przywróć vanilla (1.0)",
+  "eatspeedtuner.screen.refresh": "Odśwież",
+  "eatspeedtuner.screen.hint": "1 = prędkość vanilla | 0.5 = połowa czasu | 2 = podwójny czas",
+  "eatspeedtuner.screen.invalid": "Wpisz liczbę większą od 0, na przykład 1, 0.5 lub 2",
+  "eatspeedtuner.screen.preview": "Mnożnik %s → stek %s s, suszone wodorosty %s s",
+  "eatspeedtuner.screen.current": "Obecnie: %s (%s)",
+  "eatspeedtuner.screen.source_local": "ta gra",
+  "eatspeedtuner.screen.source_remote": "z serwera",
+  "eatspeedtuner.screen.sent": "Wysłano żądanie do serwera, czekam…",
+  "eatspeedtuner.screen.applied": "Zastosowano: %s (działa natychmiast)",
+  "eatspeedtuner.screen.refreshed": "Ponownie wczytano bieżącą wartość",
+  "eatspeedtuner.message.not_allowed": "Tylko host lub operator może zmienić szybkość jedzenia.",
+  "eatspeedtuner.command.query": "Bieżący mnożnik szybkości jedzenia: %s",
+  "eatspeedtuner.command.set": "Mnożnik szybkości jedzenia ustawiony na %s",
+  "key.eatspeedtuner.open_config": "Otwórz ustawienia szybkości jedzenia",
+  "key.categories.eatspeedtuner": "Szybkość jedzenia"
+}

@@ -1,0 +1,21 @@
+{
+  "eatspeedtuner.screen.title": "Yeme Hızı",
+  "eatspeedtuner.screen.input": "Çarpan",
+  "eatspeedtuner.screen.apply": "Uygula",
+  "eatspeedtuner.screen.reset": "Vanilyaya dön (1.0)",
+  "eatspeedtuner.screen.refresh": "Yenile",
+  "eatspeedtuner.screen.hint": "1 = vanilya hızı | 0.5 = sürenin yarısı | 2 = sürenin iki katı",
+  "eatspeedtuner.screen.invalid": "Sıfırdan büyük bir sayı girin, örneğin 1, 0.5 veya 2",
+  "eatspeedtuner.screen.preview": "Çarpan %s → biftek %s sn, kurutulmuş yosun %s sn",
+  "eatspeedtuner.screen.current": "Şu an: %s (%s)",
+  "eatspeedtuner.screen.source_local": "bu oyun",
+  "eatspeedtuner.screen.source_remote": "sunucudan",
+  "eatspeedtuner.screen.sent": "İstek sunucuya gönderildi, bekleniyor…",
+  "eatspeedtuner.screen.applied": "Uygulandı: %s (anında etkili)",
+  "eatspeedtuner.screen.refreshed": "Geçerli değer yeniden yüklendi",
+  "eatspeedtuner.message.not_allowed": "Yeme hızını yalnızca sunucu sahibi veya operatör değiştirebilir.",
+  "eatspeedtuner.command.query": "Geçerli yeme hızı çarpanı: %s",
+  "eatspeedtuner.command.set": "Yeme hızı çarpanı %s olarak ayarlandı",
+  "key.eatspeedtuner.open_config": "Yeme hızı ayarlarını aç",
+  "key.categories.eatspeedtuner": "Yeme Hızı"
+}

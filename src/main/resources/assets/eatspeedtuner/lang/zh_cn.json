@@ -1,0 +1,21 @@
+{
+  "eatspeedtuner.screen.title": "进食速度调节器",
+  "eatspeedtuner.screen.input": "倍率",
+  "eatspeedtuner.screen.apply": "应用",
+  "eatspeedtuner.screen.reset": "恢复原版 (1.0)",
+  "eatspeedtuner.screen.refresh": "刷新",
+  "eatspeedtuner.screen.hint": "1 = 原版速度 | 0.5 = 时间减半 | 2 = 时间翻倍",
+  "eatspeedtuner.screen.invalid": "请输入大于 0 的数字，例如 1、0.5、2",
+  "eatspeedtuner.screen.preview": "倍率 %s → 牛排 %s 秒，干海带 %s 秒",
+  "eatspeedtuner.screen.current": "当前：%s（%s）",
+  "eatspeedtuner.screen.source_local": "本机设置",
+  "eatspeedtuner.screen.source_remote": "来自主机",
+  "eatspeedtuner.screen.sent": "已发送给主机，等待处理……",
+  "eatspeedtuner.screen.applied": "已生效：%s（立即生效）",
+  "eatspeedtuner.screen.refreshed": "已重新读取当前值",
+  "eatspeedtuner.message.not_allowed": "只有主机或 OP 可以修改进食速度。",
+  "eatspeedtuner.command.query": "当前进食速度倍率：%s",
+  "eatspeedtuner.command.set": "进食速度倍率已设为 %s",
+  "key.eatspeedtuner.open_config": "打开进食速度设置",
+  "key.categories.eatspeedtuner": "进食速度调节器"
+}

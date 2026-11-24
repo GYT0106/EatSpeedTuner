@@ -1,0 +1,21 @@
+{
+  "eatspeedtuner.screen.title": "Velocidade de comida",
+  "eatspeedtuner.screen.input": "Multiplicador",
+  "eatspeedtuner.screen.apply": "Aplicar",
+  "eatspeedtuner.screen.reset": "Restaurar vanilla (1.0)",
+  "eatspeedtuner.screen.refresh": "Atualizar",
+  "eatspeedtuner.screen.hint": "1 = velocidade vanilla | 0.5 = metade do tempo | 2 = dobro do tempo",
+  "eatspeedtuner.screen.invalid": "Digite um número maior que 0, por exemplo 1, 0.5 ou 2",
+  "eatspeedtuner.screen.preview": "Multiplicador %s → bife %s s, kelp seco %s s",
+  "eatspeedtuner.screen.current": "Atual: %s (%s)",
+  "eatspeedtuner.screen.source_local": "este jogo",
+  "eatspeedtuner.screen.source_remote": "do servidor",
+  "eatspeedtuner.screen.sent": "Pedido enviado ao servidor, aguardando…",
+  "eatspeedtuner.screen.applied": "Aplicado: %s (efeito imediato)",
+  "eatspeedtuner.screen.refreshed": "Valor atual recarregado",
+  "eatspeedtuner.message.not_allowed": "Apenas o anfitrião ou um operador pode alterar a velocidade de comida.",
+  "eatspeedtuner.command.query": "Multiplicador atual de velocidade de comida: %s",
+  "eatspeedtuner.command.set": "Multiplicador de velocidade de comida definido como %s",
+  "key.eatspeedtuner.open_config": "Abrir ajustes de velocidade de comida",
+  "key.categories.eatspeedtuner": "Velocidade de comida"
+}

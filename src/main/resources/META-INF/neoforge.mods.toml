@@ -1,0 +1,37 @@
+modLoader = "javafml"
+loaderVersion = "*"
+license = "MIT"
+
+[[mods]]
+modId = "eatspeedtuner"
+version = "1.0.0"
+displayName = "Eat Speed Tuner"
+authors = "GYT0106"
+logoFile = "eatspeedtuner_icon.png"
+description = '''
+Eat Speed Tuner
+
+Scales how long it takes to eat and drink by a single multiplier.
+1.0 = vanilla, 0.5 = half the time, 2.0 = twice the time.
+Only EAT/DRINK items are affected; bows, shields and spyglasses are untouched.
+
+Set the value from the mod config screen (or Configured), with the /eatspeedtuner
+command, or in config/eatspeedtuner-common.toml.
+In multiplayer the host is authoritative and the value is synced live.
+'''
+
+[[dependencies.eatspeedtuner]]
+modId = "neoforge"
+type = "required"
+versionRange = "[21.1,)"
+ordering = "NONE"
+side = "BOTH"
+
+[[dependencies.eatspeedtuner]]
+modId = "minecraft"
+type = "required"
+versionRange = "[1.21.1]"
+ordering = "NONE"
+side = "BOTH"
+
+

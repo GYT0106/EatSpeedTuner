@@ -1,0 +1,21 @@
+{
+  "eatspeedtuner.screen.title": "섭취 속도 튜너",
+  "eatspeedtuner.screen.input": "배율",
+  "eatspeedtuner.screen.apply": "적용",
+  "eatspeedtuner.screen.reset": "바닐라로 복구 (1.0)",
+  "eatspeedtuner.screen.refresh": "새로고침",
+  "eatspeedtuner.screen.hint": "1 = 바닐라 속도 | 0.5 = 시간 절반 | 2 = 시간 2배",
+  "eatspeedtuner.screen.invalid": "0보다 큰 숫자를 입력하세요. 예: 1, 0.5, 2",
+  "eatspeedtuner.screen.preview": "배율 %s → 스테이크 %s초, 말린 켈프 %s초",
+  "eatspeedtuner.screen.current": "현재: %s (%s)",
+  "eatspeedtuner.screen.source_local": "이 게임",
+  "eatspeedtuner.screen.source_remote": "서버에서",
+  "eatspeedtuner.screen.sent": "서버로 전송했습니다. 처리 대기 중……",
+  "eatspeedtuner.screen.applied": "적용됨: %s (즉시 반영)",
+  "eatspeedtuner.screen.refreshed": "현재 값을 다시 읽었습니다",
+  "eatspeedtuner.message.not_allowed": "섭취 속도는 호스트 또는 OP만 변경할 수 있습니다.",
+  "eatspeedtuner.command.query": "현재 섭취 속도 배율: %s",
+  "eatspeedtuner.command.set": "섭취 속도 배율을 %s(으)로 설정했습니다",
+  "key.eatspeedtuner.open_config": "섭취 속도 설정 열기",
+  "key.categories.eatspeedtuner": "섭취 속도 튜너"
+}

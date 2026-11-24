@@ -1,0 +1,21 @@
+{
+  "eatspeedtuner.screen.title": "Essgeschwindigkeit",
+  "eatspeedtuner.screen.input": "Multiplikator",
+  "eatspeedtuner.screen.apply": "Anwenden",
+  "eatspeedtuner.screen.reset": "Auf Vanilla zurücksetzen (1.0)",
+  "eatspeedtuner.screen.refresh": "Aktualisieren",
+  "eatspeedtuner.screen.hint": "1 = Vanilla | 0.5 = halbe Zeit | 2 = doppelte Zeit",
+  "eatspeedtuner.screen.invalid": "Bitte eine Zahl größer als 0 eingeben, z. B. 1, 0.5 oder 2",
+  "eatspeedtuner.screen.preview": "Multiplikator %s → Steak %s s, getrocknete Kelpblätter %s s",
+  "eatspeedtuner.screen.current": "Aktuell: %s (%s)",
+  "eatspeedtuner.screen.source_local": "dieses Spiel",
+  "eatspeedtuner.screen.source_remote": "vom Server",
+  "eatspeedtuner.screen.sent": "Anfrage an den Server gesendet, warte auf Antwort …",
+  "eatspeedtuner.screen.applied": "Angewendet: %s (sofort wirksam)",
+  "eatspeedtuner.screen.refreshed": "Aktueller Wert neu geladen",
+  "eatspeedtuner.message.not_allowed": "Nur der Host oder ein Operator kann die Essgeschwindigkeit ändern.",
+  "eatspeedtuner.command.query": "Aktueller Essgeschwindigkeits-Multiplikator: %s",
+  "eatspeedtuner.command.set": "Essgeschwindigkeits-Multiplikator auf %s gesetzt",
+  "key.eatspeedtuner.open_config": "Essgeschwindigkeit öffnen",
+  "key.categories.eatspeedtuner": "Essgeschwindigkeit"
+}

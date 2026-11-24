@@ -1,0 +1,21 @@
+{
+  "eatspeedtuner.screen.title": "Velocità di consumo",
+  "eatspeedtuner.screen.input": "Moltiplicatore",
+  "eatspeedtuner.screen.apply": "Applica",
+  "eatspeedtuner.screen.reset": "Ripristina vanilla (1.0)",
+  "eatspeedtuner.screen.refresh": "Aggiorna",
+  "eatspeedtuner.screen.hint": "1 = velocità vanilla | 0.5 = metà del tempo | 2 = doppio del tempo",
+  "eatspeedtuner.screen.invalid": "Inserisci un numero maggiore di 0, ad esempio 1, 0.5 o 2",
+  "eatspeedtuner.screen.preview": "Moltiplicatore %s → bistecca %s s, alghe essiccate %s s",
+  "eatspeedtuner.screen.current": "Attuale: %s (%s)",
+  "eatspeedtuner.screen.source_local": "questo gioco",
+  "eatspeedtuner.screen.source_remote": "dal server",
+  "eatspeedtuner.screen.sent": "Richiesta inviata al server, in attesa…",
+  "eatspeedtuner.screen.applied": "Applicato: %s (effetto immediato)",
+  "eatspeedtuner.screen.refreshed": "Valore attuale ricaricato",
+  "eatspeedtuner.message.not_allowed": "Solo l'host o un operatore può modificare la velocità di consumo.",
+  "eatspeedtuner.command.query": "Moltiplicatore attuale della velocità di consumo: %s",
+  "eatspeedtuner.command.set": "Moltiplicatore della velocità di consumo impostato a %s",
+  "key.eatspeedtuner.open_config": "Apri impostazioni velocità di consumo",
+  "key.categories.eatspeedtuner": "Velocità di consumo"
+}

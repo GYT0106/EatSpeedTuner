@@ -1,0 +1,21 @@
+{
+  "eatspeedtuner.screen.title": "Настройка скорости еды",
+  "eatspeedtuner.screen.input": "Множитель",
+  "eatspeedtuner.screen.apply": "Применить",
+  "eatspeedtuner.screen.reset": "Вернуть ваниль (1.0)",
+  "eatspeedtuner.screen.refresh": "Обновить",
+  "eatspeedtuner.screen.hint": "1 = ванильная скорость | 0.5 = вдвое быстрее | 2 = вдвое медленнее",
+  "eatspeedtuner.screen.invalid": "Введите число больше 0, например 1, 0.5 или 2",
+  "eatspeedtuner.screen.preview": "Множитель %s → стейк %s с, сушёная ламинария %s с",
+  "eatspeedtuner.screen.current": "Сейчас: %s (%s)",
+  "eatspeedtuner.screen.source_local": "эта игра",
+  "eatspeedtuner.screen.source_remote": "с сервера",
+  "eatspeedtuner.screen.sent": "Запрос отправлен на сервер, ожидание…",
+  "eatspeedtuner.screen.applied": "Применено: %s (действует сразу)",
+  "eatspeedtuner.screen.refreshed": "Текущее значение перечитано",
+  "eatspeedtuner.message.not_allowed": "Менять скорость еды может только хост или оператор.",
+  "eatspeedtuner.command.query": "Текущий множитель скорости еды: %s",
+  "eatspeedtuner.command.set": "Множитель скорости еды установлен: %s",
+  "key.eatspeedtuner.open_config": "Открыть настройку скорости еды",
+  "key.categories.eatspeedtuner": "Скорость еды"
+}

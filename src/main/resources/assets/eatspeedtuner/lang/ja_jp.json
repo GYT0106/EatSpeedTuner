@@ -1,0 +1,21 @@
+{
+  "eatspeedtuner.screen.title": "食事速度チューナー",
+  "eatspeedtuner.screen.input": "倍率",
+  "eatspeedtuner.screen.apply": "適用",
+  "eatspeedtuner.screen.reset": "バニラに戻す (1.0)",
+  "eatspeedtuner.screen.refresh": "更新",
+  "eatspeedtuner.screen.hint": "1 = バニラ速度 | 0.5 = 時間が半分 | 2 = 時間が2倍",
+  "eatspeedtuner.screen.invalid": "0 より大きい数値を入力してください（例: 1、0.5、2）",
+  "eatspeedtuner.screen.preview": "倍率 %s → ステーキ %s 秒、乾燥昆布 %s 秒",
+  "eatspeedtuner.screen.current": "現在：%s（%s）",
+  "eatspeedtuner.screen.source_local": "このゲーム",
+  "eatspeedtuner.screen.source_remote": "サーバーから",
+  "eatspeedtuner.screen.sent": "サーバーに送信しました。処理を待っています……",
+  "eatspeedtuner.screen.applied": "適用しました：%s（即時反映）",
+  "eatspeedtuner.screen.refreshed": "現在値を読み直しました",
+  "eatspeedtuner.message.not_allowed": "食事速度を変更できるのはホストまたは OP のみです。",
+  "eatspeedtuner.command.query": "現在の食事速度倍率：%s",
+  "eatspeedtuner.command.set": "食事速度倍率を %s に設定しました",
+  "key.eatspeedtuner.open_config": "食事速度設定を開く",
+  "key.categories.eatspeedtuner": "食事速度チューナー"
+}
